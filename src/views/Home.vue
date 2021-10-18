@@ -1,13 +1,14 @@
 <template>
   <div class="home">
-    <div v-for="post in posts" v-bind:key="post.id">
+    <!-- <div v-for="post in posts" v-bind:key="post.id">
       <h2>{{ post.title }}</h2>
       <p>{{ post.body }}</p>
-    </div>
+    </div> -->
 
     <div v-for="article in articles" v-bind:key="article.id">
       <h2>{{ article.title }}</h2>
       <p>{{ article.content }}</p>
+      <h4>{{ article.author }}</h4>
     </div>
   </div>
 </template>
